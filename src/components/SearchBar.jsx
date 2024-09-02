@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { MDBRow, MDBBtn, MDBInput, MDBCol } from 'mdb-react-ui-kit';
+import ProductContext from '../context/ProductContext';
 
 const SearchBar = () => {
+	const { setSearchTerm } = useContext(ProductContext);
+
+	const handleChange = (e) => {
+		e.preventDefault();
+		setSearchTerm(e.target.value);
+	};
 	return (
 		<form>
 			<MDBRow className='mb-3'>
@@ -11,6 +18,7 @@ const SearchBar = () => {
 					<MDBInput
 						label='Search...'
 						type='text'
+						onChange={handleChange}
 					/>
 				</MDBCol>
 				<MDBCol

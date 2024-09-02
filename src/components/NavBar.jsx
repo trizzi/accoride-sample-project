@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
 	MDBNavbarNav,
 	MDBNavbar,
 	MDBContainer,
-	// MDBRow,
-	// MDBCol,
 	MDBNavbarItem,
 	MDBIcon,
 	MDBBadge,
 } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
+import ProductContext from '../context/ProductContext';
 
 const NavBar = () => {
+	const { count } = useContext(ProductContext);
 	return (
 		<div>
 			<MDBNavbar
@@ -57,7 +57,7 @@ const NavBar = () => {
 								<MDBBadge
 									pill
 									color='danger'>
-									{2}
+									{count}
 								</MDBBadge>
 							</Link>
 						</MDBNavbarItem>
