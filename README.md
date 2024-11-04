@@ -33,8 +33,8 @@ An e-commerce website built with React, Express, and Node.js that allows users t
 - Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/accordide-ecommerce-sample.git
-cd accoride-ecommerce-sample
+git clone https://github.com/trizzi/accoride-sample-project.git
+cd accoride-sample-project
 ```
 - Install dependencies for both frontend and backend:
 
