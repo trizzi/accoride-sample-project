@@ -57,6 +57,7 @@ npm install
 - Create a .env file in the server directory with the following environment variables:
 
 ```bash
+
 STRIPE_SECRET_KEY=your-stripe-secret-key
 STRIPE_PUBLIC_KEY=your-stripe-public-key
 Replace your-stripe-secret-key and your-stripe-public-key with your actual Stripe API keys.
