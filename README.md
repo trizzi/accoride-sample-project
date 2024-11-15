@@ -1,9 +1,11 @@
 # Accoride E-commerce Sample
-An e-commerce website built with React, Express, and Node.js that allows users to browse products, add items to the cart, update the cart, delete items from the cart, and make payments using Stripe. The application supports payments in any currency, providing a smooth and intuitive shopping experience.
+An e-commerce website built with React, Express, Node.js, and aws amplify that allows users to browse products, add items to the cart, update the cart, delete items from the cart, and make payments using Stripe. The application supports payments in any currency, providing a smooth and intuitive shopping experience.
 
 ## Table of Contents
 - Features
 - Tech Stack
+- Images
+- Link To Live Site
 - Installation
 - Configuration
 - Usage
@@ -23,6 +25,7 @@ An e-commerce website built with React, Express, and Node.js that allows users t
 - Frontend: React, MDB React UI Kit
 - Backend: Express, Node.js
 - Payments: Stripe
+- CI/CD/Deployment: AWS Amplify
 
 # Images
 <img width="1676" alt="Screenshot 2024-11-15 at 17 01 58" src="https://github.com/user-attachments/assets/dd101ea0-2ecc-410e-bccd-b044757bb57e">
