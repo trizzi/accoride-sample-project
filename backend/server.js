@@ -1,10 +1,19 @@
 const express = require('express');
 const { SECRET_KEY } = require('./secret');
+const cors = require('cors');
 const app = express();
 
 const stripe = require('stripe')(SECRET_KEY);
 
 app.use(express.json());
+
+app.use(
+	cors({
+		origin: 'http://localhost:3000', // Replace with your frontend URL
+		methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+		credentials: true, // Allow cookies and credentials
+	}),
+);
 
 app.use((req, res, next) => {
 	res.header('Access-Control-Allow-Origin', '*');
