@@ -27,7 +27,8 @@ An e-commerce website built with React, Express, and Node.js that allows users t
 # Images
 <img width="1676" alt="Screenshot 2024-11-15 at 17 01 58" src="https://github.com/user-attachments/assets/dd101ea0-2ecc-410e-bccd-b044757bb57e">
 <img width="1676" alt="Screenshot 2024-11-15 at 17 02 08" src="https://github.com/user-attachments/assets/5c1ec716-ad24-477d-a556-3aea61271381">
-<img width="1676" alt="Screenshot 2024-11-15 at 17 01 58" src="https://github.com/user-attachments/assets/e4425aa7-a115-4644-a6df-6f9ad4978274">
+<img width="1680" alt="Screenshot 2024-11-15 at 17 02 51" src="https://github.com/user-attachments/assets/72350b0d-988e-4639-8f77-8f8d7d0b43b3">
+
 
 
 # Link to Live Site
