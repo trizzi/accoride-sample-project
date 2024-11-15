@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# Accoride E-commerce Sample
+An e-commerce website built with React, Express, and Node.js that allows users to browse products, add items to the cart, update the cart, delete items from the cart, and make payments using Stripe. The application supports payments in any currency, providing a smooth and intuitive shopping experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- Features
+- Tech Stack
+- Installation
+- Configuration
+- Usage
+- Scripts
+- Folder Structure
+- Contributing
+- License
 
-## Available Scripts
+## Features
+- Add to Cart: Easily add products to the shopping cart.
+- Update Cart: Adjust product quantities or update the cart as needed.
+- Delete Items from Cart: Remove unwanted items from the cart.
+- Stripe Payments: Secure payment processing through Stripe, supporting various currencies.
+- Responsive Design: Fully responsive UI, providing a smooth experience on any device.
+  
+## Tech Stack
+- Frontend: React, MDB React UI Kit
+- Backend: Express, Node.js
+- Payments: Stripe
 
-In the project directory, you can run:
+# Installation
+## Prerequisites
+- Node.js and npm installed on your local machine
+- A Stripe account and API keys
 
-### `npm start`
+## Steps
+- Clone the repository:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+git clone https://github.com/trizzi/accoride-sample-project.git
+cd accoride-sample-project
+```
+- Install dependencies for both frontend and backend:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  Frontend:
 
-### `npm test`
+```bash
+cd client
+npm install
+```
+  Backend:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+cd server
+npm install
+```
 
-### `npm run build`
+- Set up Stripe (see Configuration below).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Configuration
+- Create a .env file in the server directory with the following environment variables:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+STRIPE_SECRET_KEY=your-stripe-secret-key
+STRIPE_PUBLIC_KEY=your-stripe-public-key
+Replace your-stripe-secret-key and your-stripe-public-key with your actual Stripe API keys.
+```
 
-### `npm run eject`
+## Usage
+- Start the backend server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd server
+npm run dev
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Start the frontend development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd client
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Open your browser:
 
-## Learn More
+Navigate to http://localhost:3000 to view the e-commerce app.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Scripts
+Backend (in server folder)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm run dev - Run the backend server with nodemon for hot reloading.
+npm start - Run the backend server in production mode.
 
-### Code Splitting
+Frontend (in client folder)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm start - Start the React development server.
+npm run build - Build the React app for production.
 
-### Analyzing the Bundle Size
+## Folder Structure
+```plaintext
+.
+├── client                 # React frontend
+│   ├── public             # Static assets
+│   ├── src
+│   │   ├── components     # Reusable UI components
+│   │   ├── pages          # Page components (e.g., Cart, Product)
+│   │   ├── context        # Context API for state management
+│   │   └── utils          # Helper functions (e.g., Stripe integration)
+│   └── .env.local         # Environment variables for frontend (Stripe public key)
+└── server                 # Node.js and Express backend
+    ├── routes             # API routes
+    ├── controllers        # API controllers
+    ├── models             # Data models
+    ├── utils              # Utility functions (e.g., Stripe configuration)
+    └── .env               # Environment variables for backend (Stripe secret key)
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Key Technologies
+1. React & MDB React UI Kit
+React handles the component-based architecture for the frontend.
+MDB React UI Kit is used for consistent, responsive, and beautiful UI components.
+2. Express & Node.js
+The backend is built with Express and Node.js, providing a REST API for handling cart operations and Stripe payment integration.
+3. Stripe Payment Processing
+Stripe handles secure payments in various currencies, giving customers a flexible and secure checkout experience.
 
-### Making a Progressive Web App
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements. For major changes, discuss them first to ensure they align with the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
