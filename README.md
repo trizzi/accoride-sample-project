@@ -148,6 +148,7 @@ This project is deployed using AWS Amplify, a fully managed deployment and hosti
 - Scalability: Ensures the application scales with traffic.
 - Environment Management: Easily manage multiple environments (e.g., development, staging, production).
 
+
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements. For major changes, discuss them first to ensure they align with the project.
 
