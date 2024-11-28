@@ -146,7 +146,7 @@ This project is deployed using AWS Amplify, a fully managed deployment and hosti
 - Automatic Builds: Automatically builds and deploys the application upon code updates.
 - Custom Domains: Supports custom domains and provides HTTPS by default.
 - Scalability: Ensures the application scales with traffic.
-- Environment Management: Easily manage multiple environments (e.g., development, staging, production).
+- Environment Management: Easily manage multiple environments (e.g, development, staging, production).
 
 
 ## Contributing
